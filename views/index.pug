@@ -1,0 +1,12 @@
+html
+  head
+
+  body
+    form(action="question" method="post")
+      input(type="text" placeholder="pregunta" name="question")
+      input(type="submit" value="guardar")
+    h1 TRIVIA
+    form
+    ol
+      each item in questions
+        li = item.question
